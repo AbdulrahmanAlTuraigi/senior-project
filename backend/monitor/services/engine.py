@@ -44,8 +44,8 @@ class MonitoringEngine:
 
         self.sensor = HX710B(
             HX710BConfig(
-                sck_pin=_env_int("SENSOR1_SCK", 27),
-                dout_pin=_env_int("SENSOR1_DOUT", 17),
+                sck_pin=_env_int("SENSOR1_SCK", 17),
+                dout_pin=_env_int("SENSOR1_DOUT", 27),
                 offset=_env_float("SENSOR1_OFFSET", 0.0),
                 scale=_env_float("SENSOR1_SCALE", 1.0),
                 ready_timeout_s=_env_float("SENSOR_READY_TIMEOUT_S", 0.25),
