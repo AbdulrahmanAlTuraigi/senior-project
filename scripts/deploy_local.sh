@@ -54,8 +54,8 @@ cd "$ROOT_DIR/backend"
 "$PYTHON_BIN" manage.py migrate
 
 # Default wiring is single-sensor SCK=27 DOUT=17; override with env vars if needed.
-export SENSOR1_SCK="${SENSOR1_SCK:-27}"
-export SENSOR1_DOUT="${SENSOR1_DOUT:-17}"
+export SENSOR1_SCK="${SENSOR1_SCK:-17}"
+export SENSOR1_DOUT="${SENSOR1_DOUT:-27}"
 
 echo "Starting PipeGuard at http://0.0.0.0:$APP_PORT"
 exec "$PYTHON_BIN" manage.py runserver 0.0.0.0:"$APP_PORT"
