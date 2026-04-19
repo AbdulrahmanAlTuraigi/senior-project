@@ -64,7 +64,7 @@ class MonitoringEngine:
         self._zero_streak = 0
         self._same_streak = 0
         self._zero_fault_threshold = max(6, int(self.sample_hz * 1.5))
-        self._same_fault_threshold = max(12, int(self.sample_hz * 3.0))
+        self._same_fault_threshold = max(600, int(self.sample_hz * 120.0))
 
         self._latest: dict[str, Any] = {
             "seq": 0,
