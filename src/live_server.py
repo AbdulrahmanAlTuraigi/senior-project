@@ -288,7 +288,7 @@ def stream() -> Response:
                 payload = dict(engine.latest)
             if payload["seq"] != last_seq:
                 last_seq = payload["seq"]
-                yield f"data: {json.dumps(payload)}\\n\\n"
+                yield f"data: {json.dumps(payload)}\n\n"
             time.sleep(0.1)
 
     return Response(event_gen(), mimetype="text/event-stream")
