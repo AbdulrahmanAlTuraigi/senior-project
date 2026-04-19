@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PipeGuard Live Monitor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hero">
+        <h1>PipeGuard Live Monitor</h1>
+        <p>Raspberry Pi + HX710B streaming + model inference</p>
+        <div id="statusBadge" class="badge">Connecting...</div>
+      </section>
+
+      <section class="card full">
+        <h2>Live Stream Progress</h2>
+        <div class="inline progress-row">
+          <span><span id="streamDot" class="stream-dot"></span> Stream</span>
+          <span>Packets Received: <strong id="packetCount">0</strong></span>
+          <span>Sequence: <strong id="seqNo">--</strong></span>
+          <span>Sensor Delta: <strong id="sensorDelta">--</strong></span>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Sensor 1</h2>
+          <p id="sensor1" class="metric">--</p>
+          <small>Input pressure channel A</small>
+        </article>
+
+        <article class="card">
+          <h2>Sensor 2</h2>
+          <p id="sensor2" class="metric">--</p>
+          <small>Input pressure channel B</small>
+        </article>
+
+        <article class="card">
+          <h2>Leak Probability</h2>
+          <p id="probability" class="metric">--</p>
+          <div class="meter"><span id="meterFill"></span></div>
+          <small id="confidence">Confidence: --</small>
+        </article>
+      </section>
+
+      <section class="card full">
+        <h2>Inference State</h2>
+        <div class="inline">
+          <span>Alert: <strong id="alertLevel">--</strong></span>
+          <span>Leak Detected: <strong id="leakDetected">--</strong></span>
+          <span>Sensor Health: <strong id="sensorHealth">--</strong></span>
+          <span>Last Update: <strong id="lastUpdate">--</strong></span>
+          <span>Mode: <strong id="mode">--</strong></span>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

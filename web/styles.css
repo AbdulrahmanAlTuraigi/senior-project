@@ -1,0 +1,130 @@
+:root {
+  --bg-a: #0f172a;
+  --bg-b: #1d4e89;
+  --card: rgba(255, 255, 255, 0.12);
+  --line: rgba(255, 255, 255, 0.28);
+  --text: #f8fafc;
+  --ok: #22c55e;
+  --warn: #f59e0b;
+  --crit: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 15% 20%, #0ea5e9, transparent 40%),
+    radial-gradient(circle at 85% 80%, #f97316, transparent 35%),
+    linear-gradient(130deg, var(--bg-a), var(--bg-b));
+  display: grid;
+  place-items: center;
+}
+
+.layout {
+  width: min(980px, 94vw);
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.badge {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.metric {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.progress-row {
+  align-items: center;
+}
+
+.stream-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  vertical-align: middle;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+}
+
+.stream-dot.pulse {
+  background: var(--ok);
+  transform: scale(1.25);
+}
+
+.meter {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--ok), var(--warn), var(--crit));
+  transition: width 0.2s ease;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    padding: 1rem 0;
+  }
+}

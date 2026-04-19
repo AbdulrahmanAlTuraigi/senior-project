@@ -1,0 +1,69 @@
+[2026-04-17 22:17:38 +0100] [11066] [INFO] Starting gunicorn 25.3.0
+[2026-04-17 22:17:38 +0100] [11066] [INFO] Listening at: http://0.0.0.0:8000 (11066)
+[2026-04-17 22:17:38 +0100] [11066] [INFO] Using worker: gthread
+[2026-04-17 22:17:38 +0100] [11068] [INFO] Booting worker with pid: 11068
+[2026-04-17 22:17:38 +0100] [11070] [INFO] Booting worker with pid: 11070
+[2026-04-17 22:17:39 +0100] [11066] [INFO] Control socket listening at /run/user/1000/gunicorn.ctl
+[2026-04-17 22:19:43 +0100] [11561] [INFO] Starting gunicorn 25.3.0
+[2026-04-17 22:19:43 +0100] [11561] [INFO] Listening at: http://0.0.0.0:8000 (11561)
+[2026-04-17 22:19:43 +0100] [11561] [INFO] Using worker: gthread
+[2026-04-17 22:19:43 +0100] [11563] [INFO] Booting worker with pid: 11563
+[2026-04-17 22:19:43 +0100] [11564] [INFO] Booting worker with pid: 11564
+[2026-04-17 22:19:43 +0100] [11561] [INFO] Control socket listening at /run/user/1000/gunicorn.ctl
+[2026-04-17 22:26:38 +0100] [11561] [INFO] Handling signal: term
+[2026-04-17 22:26:41 +0100] [14387] [INFO] Starting gunicorn 25.3.0
+[2026-04-17 22:26:41 +0100] [14387] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:41 +0100] [14387] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:42 +0100] [14387] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:42 +0100] [14387] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:43 +0100] [14387] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:43 +0100] [14387] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:44 +0100] [14387] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:44 +0100] [14387] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:45 +0100] [14387] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:45 +0100] [14387] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:46 +0100] [14387] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2026-04-17 22:26:48 +0100] [14442] [INFO] Starting gunicorn 25.3.0
+[2026-04-17 22:26:48 +0100] [14442] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:48 +0100] [14442] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:49 +0100] [14442] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:49 +0100] [14442] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:50 +0100] [14442] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:50 +0100] [14442] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:51 +0100] [14442] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:51 +0100] [14442] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:52 +0100] [14442] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:52 +0100] [14442] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:53 +0100] [14442] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2026-04-17 22:26:56 +0100] [14466] [INFO] Starting gunicorn 25.3.0
+[2026-04-17 22:26:56 +0100] [14466] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:56 +0100] [14466] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:57 +0100] [14466] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:57 +0100] [14466] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:58 +0100] [14466] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:58 +0100] [14466] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:26:59 +0100] [14466] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:26:59 +0100] [14466] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:27:00 +0100] [14466] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:27:00 +0100] [14466] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:27:01 +0100] [14466] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2026-04-17 22:27:03 +0100] [14500] [INFO] Starting gunicorn 25.3.0
+[2026-04-17 22:27:03 +0100] [14500] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:27:03 +0100] [14500] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:27:04 +0100] [14500] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:27:04 +0100] [14500] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:27:05 +0100] [14500] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:27:05 +0100] [14500] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:27:06 +0100] [14500] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:27:06 +0100] [14500] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:27:07 +0100] [14500] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2026-04-17 22:27:07 +0100] [14500] [ERROR] connection to ('0.0.0.0', 8000) failed: [Errno 98] Address already in use
+[2026-04-17 22:27:08 +0100] [14500] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2026-04-17 21:27:08 +0000] [11563] [INFO] Worker exiting (pid: 11563)
+[2026-04-17 22:27:08 +0100] [11561] [INFO] Shutting down: Master
+[2026-04-17 22:27:10 +0100] [14510] [INFO] Starting gunicorn 25.3.0
+[2026-04-17 22:27:10 +0100] [14510] [INFO] Listening at: http://0.0.0.0:8000 (14510)
+[2026-04-17 22:27:10 +0100] [14510] [INFO] Using worker: gthread
+[2026-04-17 22:27:10 +0100] [14520] [INFO] Booting worker with pid: 14520
+[2026-04-17 22:27:10 +0100] [14521] [INFO] Booting worker with pid: 14521
+[2026-04-17 22:27:11 +0100] [14510] [INFO] Control socket listening at /home/test/.gunicorn/gunicorn.ctl
