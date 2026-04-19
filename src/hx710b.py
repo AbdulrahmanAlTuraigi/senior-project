@@ -64,7 +64,7 @@ class HX710B:
                 GPIO.setwarnings(False)
                 GPIO.setmode(GPIO.BCM)
                 GPIO.setup(self.config.sck_pin, GPIO.OUT)
-                GPIO.setup(self.config.dout_pin, GPIO.IN)
+                GPIO.setup(self.config.dout_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
                 GPIO.output(self.config.sck_pin, GPIO.LOW)
                 self._mock_mode = False
                 self._backend = "rpi_gpio"
